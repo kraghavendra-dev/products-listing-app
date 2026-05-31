@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #c2b9b9;
+    color: white;
+    border-bottom: 1px solid black;
+}
+.logo{
+    font-size: 16px;
+    color: rgb(10, 10, 10);
+    font-weight: 700;
+    margin-right: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.search-container{
+    margin-left: 300px;
+}
+.search{
+    width: 300px;
+    padding: 10px;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
