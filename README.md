@@ -1,16 +1,123 @@
-# React + Vite
+# Product Listing App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based Product Listing Application that displays cocktail products using TheCocktailDB API. The application allows users to browse drinks, search by name, and filter products by category.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* View a list of cocktail products
+* Search drinks by name
+* Filter drinks by category
+* Responsive product card layout
+* Loading and error handling
+* Dynamic data fetching using Axios
+* Real-time updates based on user input
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* JavaScript (ES6+)
+* Axios
+* CSS3
+* TheCocktailDB API
 
-## Expanding the ESLint configuration
+## API Endpoints
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Search Drinks by Name
+
+```url
+`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drinkName}`
+```
+
+Example:
+
+```url
+https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
+```
+
+### Filter Drinks by Category
+
+```url
+`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${category}`
+```
+
+Example:
+
+```url
+https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail
+```
+
+## Application Flow
+
+1. Application loads initial cocktail data.
+2. User enters a drink name in the search box.
+3. Search API fetches matching drinks.
+4. User selects a category from the dropdown.
+5. Category API fetches drinks belonging to the selected category.
+6. Results are displayed as product cards with image and name.
+
+## State Management
+
+The application uses React Hooks:
+
+* `useState` for managing:
+
+  * Product data
+  * Search input
+  * Selected category
+  * Loading state
+  * Error state
+
+* `useEffect` for:
+
+  * Fetching data when search input changes
+  * Fetching data when category changes
+
+## User Interface
+
+### Search Input
+
+Allows users to search cocktails by name.
+
+### Category Dropdown
+
+Provides category-based filtering such as:
+
+* Cocktail
+* Ordinary Drink
+* Shake
+* Shot
+* Coffee / Tea
+* Punch / Party Drink
+* Beer
+* Soft Drink / Soda
+
+### Product Cards
+
+Each card displays:
+
+* Product image
+* Product name
+
+## Error Handling
+
+* Displays loading indicator while fetching data.
+* Shows error messages if API requests fail.
+* Handles empty search results gracefully.
+
+## Future Enhancements
+
+* Pagination
+* Sorting options
+* Product details page
+* Favorites functionality
+* Debounced search input
+* Advanced filtering options
+
+## Author
+
+**Raghavendra Karingu**
+
+Frontend Developer specializing in React.js and modern JavaScript applications.
+
+
+
