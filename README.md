@@ -12,6 +12,10 @@ A React-based Product Listing Application that displays cocktail products using 
 * Dynamic data fetching using Axios
 * Real-time updates based on user input
 
+## Live Demo
+
+https://products-listing-app-theta.vercel.app/
+
 ## Technologies Used
 
 * React.js
@@ -118,6 +122,3 @@ Each card displays:
 **Raghavendra Karingu**
 
 Frontend Developer specializing in React.js and modern JavaScript applications.
-
-
-
