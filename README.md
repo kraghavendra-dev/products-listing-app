@@ -14,7 +14,7 @@ A React-based Product Listing Application that displays cocktail products using 
 
 ## Live Demo
 
-https://products-listing-app-theta.vercel.app/
+https://products-listing-ktfy9zyge-kraghavendra-devs-projects.vercel.app/
 
 ## Technologies Used
 
